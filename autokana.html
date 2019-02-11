@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="./jquery.autoKana.js"></script>
+
+<script>
+  $(function() {
+    $.fn.autoKana('#firstname', '#firstname-furigana', {katakana:true});
+    $.fn.autoKana('#lastname', '#lastname-furigana', {katakana:true});
+});
+</script>
+</head>
+<body>
+  <dl>
+    <dt>名前(漢字)</dt>
+    <dd>
+        <input type="text" name="firstname" id="firstname" />
+        <input type="text" name="lastname" id="lastname" />
+    </dd>
+</dl>
+<dl>
+    <dt>名前(カタカナ)</dt>
+    <dd>
+        <input type="text" name="firstname-furigana" id="firstname-furigana" />
+        <input type="text" name="lastname-furigana" id="lastname-furigana" />
+    </dd>
+</dl>
+
+</body>
+</html>
